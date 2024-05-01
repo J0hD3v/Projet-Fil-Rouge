@@ -1,0 +1,65 @@
+/* Ensemble de la Navbar */
+.header_nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 5vh;
+    width: 100%;
+    background-color: #889099; /* #b6b6b6 */
+}
+
+
+/* Les boutons */
+.header_nav>button,
+.header_nav .btn_nav>button {
+    min-width: 8em;
+    padding: 0.5em;
+    background-color: #eeeeee;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header_nav button:hover,
+.header_nav .btn_nav .dropdown_nav button:hover {
+    background-color: #dbdbdb;
+}
+
+.header_nav button:active,
+.header_nav .btn_nav .dropdown_nav button:active {
+    background-color: #eeeeee;
+}
+
+.header_nav .btn_nav .dropdown_nav {
+    position: absolute;
+    flex-direction: column;
+    display: none;
+}
+
+.header_nav .btn_nav:hover .dropdown_nav {
+    display: flex;
+}
+
+.header_nav .btn_nav .dropdown_nav>button {
+    min-width: 8em;
+    padding: 0.5em;
+    background-color: #eeeeee;
+    border: 0.5px solid black;
+    border-top: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.header_nav .btn_nav .dropdown_nav>button:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+/* Les icones */
+.header_nav nav {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}

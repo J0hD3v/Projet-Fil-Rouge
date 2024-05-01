@@ -1,0 +1,16 @@
+/* petit écran */
+@media screen and (max-width: 800px) {
+    .header_nav {
+        display: none;
+    }
+}
+
+
+/* grand écran */
+@media screen and (min-width: 800px) {
+    .header_nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}

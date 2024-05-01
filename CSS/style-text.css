@@ -1,0 +1,9 @@
+header .header_center h1 {
+    font-size: 3em;
+}
+
+main .home_informations p {
+    padding: 2em;
+    width: 50%;
+    text-align: center;
+}
