@@ -21,10 +21,28 @@ main .home_background {
     justify-content: space-around;
 }
 
-main .home_background button {
+main .home_background .logo {
+    height: 25vh;
+}
+
+main .home_background .btn_reservation {
     font-size: 1em;
     padding: 1em;
+    background-color: #eeeeee;
+    border: 0.5px solid black;
+    border-radius: 5px;
     cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main .home_background .btn_reservation:hover {
+    background-color: #dbdbdb;
+}
+
+main .home_background .btn_reservation:active {
+    background-color: #eeeeee;
 }
 
 
@@ -46,4 +64,10 @@ main .home_informations {
     background-color: azure;
     border-radius: 10px;
     display: flex;
+}
+
+main .home_informations p {
+    padding: 2em;
+    width: 50%;
+    text-align: center;
 }

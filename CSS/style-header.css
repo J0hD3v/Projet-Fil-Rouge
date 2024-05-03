@@ -20,6 +20,13 @@ header {
     justify-content: end;
 }
 
+.header_informations .icon {
+    height: 50%;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
 
 /* Partie centrale */
 .header_center {
@@ -28,4 +35,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header_center .logo {
+    position: absolute;
+    left: 1%;
+    height: 12vh;
+    border-radius: 10px;
+}
+
+.header_center h1 {
+    font-size: 3em;
 }
