@@ -37,7 +37,7 @@
     background-color: #dbdbdb;
 }
 
-/* Clic des liens  */
+/* Appuis sur des liens  */
 .header_nav a:active,
 .header_nav .btn_nav .dropdown_nav a:active {
     background-color: #eeeeee;
@@ -55,6 +55,7 @@
     display: flex;
 }
 
+/* Les boutons dans le Dropdown */
 .header_nav .btn_nav .dropdown_nav>a {
     min-width: 8em;
     height: 3vh;
