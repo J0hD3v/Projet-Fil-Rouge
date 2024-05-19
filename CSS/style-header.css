@@ -1,4 +1,4 @@
-/* Ensemble du Header */
+/* ---------------------------------------- Ensemble du Header */
 header {
     /* position: sticky;
     top: 0;
@@ -9,7 +9,7 @@ header {
 }
 
 
-/* Partie supérieure */
+/* ---------------------------------------- Partie supérieure */
 .header_informations {
     height: 20%;
     background-color: #8F9BB8;
@@ -28,7 +28,7 @@ header {
 }
 
 
-/* Partie centrale */
+/* ---------------------------------------- Partie centrale */
 .header_center {
     height: 80%;
     background-color: #E4E4E4;
