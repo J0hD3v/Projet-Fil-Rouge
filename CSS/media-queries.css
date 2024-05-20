@@ -1,12 +1,16 @@
 /* petit écran */
 @media screen and (max-width: 850px) {
     .header_nav {
-        /* display: none; */
-        display: block;
+        display: none;
+        /* display: block; */
         position: fixed;
         top: 20vh;
         left: 0;
         height: 100%;
+    }
+
+    .mobile_nav_display {
+        display: block;
     }
 
     .header_nav>a,

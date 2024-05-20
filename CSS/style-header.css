@@ -58,3 +58,8 @@ header {
 .header_center h1 {
     font-size: 3em;
 }
+
+#btn_open_navbar {
+    height: 12vh;
+    width: 12vh;
+}
