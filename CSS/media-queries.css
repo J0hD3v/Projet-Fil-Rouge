@@ -1,18 +1,23 @@
 /* petit écran */
 @media screen and (max-width: 850px) {
     .header_nav {
-        display: none;
+        /* display: none; */
+        display: block;
+        position: fixed;
+        top: 20vh;
+        left: 0;
+        height: 100%;
     }
 
-    main .home_informations {
-        flex-direction: column;
+    .header_nav>a,
+    .header_nav .btn_nav>span {
+        height: 10vh;
+    }
+
+    .header_nav nav {
+        height: inherit;
+        display: flex;
         align-items: center;
-    }
-
-    main .home_informations p {
-        padding: 2em;
-        width: 80%;
-        text-align: center;
     }
 }
 
@@ -23,9 +28,5 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-    }
-
-    main .home_informations p {
-        width: 50%;
     }
 }

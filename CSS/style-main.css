@@ -99,7 +99,22 @@ main .home_informations {
     display: flex;
 }
 
+@media screen and (max-width: 850px) {
+    main .home_informations {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
 main .home_informations p {
     padding: 2em;
     text-align: center;
+    width: 50%;
+}
+
+@media screen and (max-width: 850px) {
+    main .home_informations p {
+        width: 80%;
+    }
 }
