@@ -62,3 +62,9 @@ footer {
     height: 100%;
     margin-left: 1em;
 }
+
+@media screen and (max-width: 850px) {
+    #footer_map .map {
+        display: none;
+    }
+}
