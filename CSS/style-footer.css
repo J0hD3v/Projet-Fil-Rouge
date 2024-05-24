@@ -8,7 +8,8 @@ footer {
 /* Partie Gauche */
 #footer_medias {
     grid-column: 1;
-    height: inherit;
+    height: calc(20vh - 2em);
+    padding: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +24,8 @@ footer {
 /* Partie Centrale */
 #footer_informations {
     grid-column: 2;
-    height: inherit;
+    height: calc(20vh - 2em);
+    padding: 1em;
 }
 
 #footer_informations img {
@@ -33,7 +35,7 @@ footer {
 /* Partie Droite */
 #footer_map {
     grid-column: 3;
-    height: inherit;
+    height: calc(20vh - 2em);
     display: flex;
     justify-content: flex-end;
     padding: 1em;
