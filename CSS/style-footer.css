@@ -63,6 +63,13 @@ footer {
     margin-left: 1em;
 }
 
+#map {
+    height: 100%;
+    width: 25vw;
+    margin-left: 1em;
+}
+
+
 @media screen and (max-width: 850px) {
     #footer_map .map {
         display: none;
