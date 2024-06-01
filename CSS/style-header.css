@@ -4,6 +4,12 @@ header {
     width: 100%;
 }
 
+@media screen and (max-width: 850px) {
+    header {
+        height: 10vh;
+    }
+}
+
 
 /* ---------------------------------------- Partie supérieure */
 .header_informations {
@@ -16,11 +22,6 @@ header {
     justify-content: end;
 }
 
-@media screen and (max-width: 850px) {
-    .header_informations {
-        display: none;
-    }
-}
 
 .header_informations .icon {
     height: 50%;
@@ -32,6 +33,11 @@ header {
     margin: 0;
 }
 
+@media screen and (max-width: 850px) {
+    .header_informations {
+        display: none;
+    }
+}
 
 /* ---------------------------------------- Partie centrale */
 .header_center {
@@ -42,12 +48,6 @@ header {
     justify-content: center;
 }
 
-@media screen and (max-width: 850px) {
-    .header_center {
-        height: 100%;
-    }
-}
-
 .header_center .logo {
     position: absolute;
     left: 1%;
@@ -56,10 +56,26 @@ header {
 }
 
 .header_center h1 {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 #btn_open_navbar {
-    height: 12vh;
-    width: 12vh;
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .header_center {
+        height: 100%;
+    }
+
+    .header_center .logo{
+        height: 10vh;
+        left: 0;
+    }
+
+    .header_center #btn_open_navbar {
+        display: block;
+        height: 12vh;
+        width: 12vh;    
+    }
 }

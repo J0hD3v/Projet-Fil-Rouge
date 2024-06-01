@@ -11,3 +11,18 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+
+
+
+
+/* Textes */
+
+.text_1 {
+    /* fixer un font-style */
+}
+
+.link,
+.link:visited {
+    color: rgb(0, 100, 255);
+}
