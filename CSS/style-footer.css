@@ -16,8 +16,8 @@ footer {
     justify-content: space-around;
 }
 
-#footer_medias img {
-    height: 3vh;
+#footer_medias .icon {
+    height: 4vh;
 }
 
 
@@ -29,7 +29,8 @@ footer {
 }
 
 #footer_informations img {
-    height: 60%;
+    height: 75%;
+    margin: 0.5em;
 }
 
 /* Partie Droite */
@@ -49,18 +50,13 @@ footer {
     justify-content: space-around;
 }
 
-#footer_map .container_contacts .icon {
+#footer_map .icon {
     width: 3vh;
 }
 
-#footer_map .container_contacts p {
+#footer_map p {
     font-size: 1rem;
     text-align: center;
-}
-
-#footer_map .map {
-    height: 100%;
-    margin-left: 1em;
 }
 
 #map {
@@ -71,7 +67,7 @@ footer {
 
 
 @media screen and (max-width: 850px) {
-    #footer_map .map {
+    #footer_map #map {
         display: none;
     }
 }
