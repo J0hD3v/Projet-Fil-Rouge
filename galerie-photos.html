@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- liens CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style-header.css">
+    <link rel="stylesheet" href="./CSS/style-navbar.css">
+    <link rel="stylesheet" href="./CSS/style-page-galerie-photos.css">
+    <link rel="stylesheet" href="./CSS/style-footer.css">
+    <link rel="stylesheet" href="./CSS/media-queries.css">
+    <!-- liens JS -->
+    <script src="./JS/mobile-navbar.js" defer></script>
+    <script src="./JS/research-bar.js" defer></script>
+    <script src="./JS/map.js" defer></script>
+    <!-- liens API map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<!--  -->
+
+<body>
+
+    <!--  -->
+
+    <header>
+        <div class="header_informations">
+            <img src="./Images/icons/phone-icon.png" alt="icon phone" class="icon">
+            <p>01.23.45.67.89</p>
+            <img src="./Images/icons/location-icon.png" alt="icon position" class="icon">
+            <p>99 Rue Machin, 12345 Ville</p>
+        </div>
+        <div class="header_center">
+            <img src="./Images/logo tempo.png" alt="logo" class="logo btn_home">
+            <h1>Padel Club - Pau</h1>
+            <div class="menu_burger">
+                <button id="btn_open_navbar"></button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="header_nav">
+        <a href="./index.html">Accueil</a>
+        <div class="btn_nav">
+            <span href="">Evenements ▼</span>
+            <div class="dropdown_nav">
+                <a href="">Tournois</a>
+                <a href="">Seminaires</a>
+                <a href="#">Photos</a>
+                <a href="">Videos</a>
+                <a href="">Point du mois</a>
+            </div>
+        </div>
+
+        <a href="">Cours</a>
+        <a href="">Boutique</a>
+        <a href="">Nous contacter</a>
+        <nav>
+            <img src="./Images/icons/icon calendar.png" alt="icon" class="icon">
+            <img src="./Images/icons/icon user.png" alt="icon" class="icon">
+        </nav>
+    </nav>
+
+    <!--  -->
+
+    <main>
+        <input id="research_bar" placeholder="🔍 Recherche..."></input>
+
+        <!-- <div id="espace_filtres">
+            <div id="filtre_1">
+                <input type="radio" id="aucun" name="radio" value="aucun" onchange="filtrage()">
+                <label for="aucun"> Aucun </label>
+            </div>
+            <div id="filtre_2">
+                <input type="radio" id="pertinence" name="radio" value="pertinence" onchange="filtrage()">
+                <label for="pertinence"> Mes Photos </label>
+            </div>
+            <div id="filtre_3">
+                <input type="radio" id="date_ajout" name="radio" value="date_ajout" onchange="filtrage()">
+                <label for="date_ajout"> Date d'ajout </label>
+            </div>
+            <div id="filtre_4">
+                <input type="radio" id="position" name="radio" value="position" onchange="filtrage()">
+                <label for="position"> Position </label>
+            </div>
+        </div> -->
+    
+        <div id="espace_contenu">
+    
+            <!-- PICTURES ARE APPENDED HERE -->
+    
+        </div>
+    </main>
+
+    <!--  -->
+
+    <footer>
+
+        <section id="footer_medias">
+            <a href="#"><img src="./Images/icons/icon-facebook.png" class="icon" alt="facebook"></a>
+            <a href="#"><img src="./Images/icons/icon-twitter.png" class="icon" alt="twitter"></a>
+            <a href="#"><img src="./Images/icons/icon-instagram.png" class="icon" alt="instagram"></a>
+        </section>
+
+        <section id="footer_informations">
+            <h2>Notre partenaire</h2>
+            <img src="./Images/partenaire.png" alt="">
+        </section>
+
+        <section id="footer_map">
+            <section class="container_contacts">
+                <img src="./Images/icons/location-icon.png" class="icon" alt="icon position">
+                <p>99 Rue Machin, 12345 Ville</p>
+                <img src="./Images/icons/phone-icon.png" class="icon" alt="icon phone">
+                <p>01.23.45.67.89</p>
+            </section>
+            <div id="map"></div>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
