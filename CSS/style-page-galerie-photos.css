@@ -18,21 +18,6 @@
 }
 
 
-/* --------------------------------------------------- Filtres */
-
-#espace_filtres {
-    width: 60vw;
-    height: auto;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-    background-color: azure;
-    margin: 1vh;
-    padding: 0.5em;
-}
-
 /* --------------------------------------------------- Galerie */
 
 #espace_contenu {
@@ -56,8 +41,24 @@
     justify-content: center;
 }
 
+.infoPicture {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+/*     display: grid;
+    grid-template-areas:
+        "a a ."
+        "b b ."
+        "c c c"
+        "d d d"
+        "e e ."; */
+}
+
 .picture>img {
-    height: 10vh;
+    /* height: 10vh; */
+    width: 80%;
 }
 
 .picture>p {
