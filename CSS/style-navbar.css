@@ -52,7 +52,10 @@
         background-color: #889099; /* #b6b6b6 */
         z-index: 10;
 
-        /* display: none; */
+        display: none;
+    }
+
+    .mobile_nav_display {
         display: block;
     }
 
@@ -61,24 +64,25 @@
     /* Boutons navigation */
     .header_nav>a,
     .header_nav .btn_nav>span {
-        min-width: 8em;
+        width: 100%;
         height: 10vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         background-color: #eeeeee;
         border: 0.5px solid black;
         border-radius: 5px;
         text-align: center;
         cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Dropdowns */
     .header_nav .btn_nav .dropdown_nav {
-        position: absolute;
-        flex-direction: column;
+        width: 100%;
+
         display: none;
-        width: inherit;
+        flex-direction: column;
     }
 
     /* Affichage du dropdown au survol du bouton */
@@ -88,8 +92,8 @@
 
     /* Les boutons dans le Dropdown */
     .header_nav .btn_nav .dropdown_nav>a {
-        min-width: 8em;
-        height: 3vh;
+        width: 100%;
+        height: 5vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -117,6 +121,32 @@
         margin-right: 25px;
         cursor: pointer;
     }
+
+        /* -------------------------------------------------- Bouton Display - Navbar */
+
+    /* menu burger */
+    .header_center .menu_burger{
+        position: absolute;
+        right: 0%;
+        align-self: self-end;
+    }
+
+    #btn_open_navbar{
+        background-size: 80%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .open_navbar{
+        background-image: url("../Images/icons/burger-menu.png");
+    }
+
+    .close_navbar{
+        background-image: url("../Images/icons/cross.png");
+    }
+
+
 }
 
 
@@ -218,73 +248,11 @@
         margin-right: 25px;
         cursor: pointer;
     }
-}
 
+    /* -------------------------------------------------- Bouton Display - Navbar */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Version Mobile */
-
-/* menu burger */
-.header_center .menu_burger {
-    position: absolute;
-    right: 0%;
-    align-self: self-end;
-}
-
-/*  */
-.header_center .menu_burger .btn_open {
-    background-color: lightgrey;
-    background-image: url(../Images/icon\ calendar.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 8vh;
-    width: 8vh;
-    cursor: pointer;
-}
-
-.header_center .menu_burger .menu_contenu {
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0vh;
-    left: 0vw;
-    background-color: rgba(255, 0, 0, 0.2);
-    display: none;
-}
-
-.header_center .menu_burger:hover .menu_contenu {
-    display: flex;
-}
-
-.header_center .menu_burger .menu_contenu .btn_close {
-    background-color: lightgrey;
-    background-image: url(../Images/icon\ user.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 6vh;
-    width: 6vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-}
-
-.header_center .menu_burger .menu_contenu .btn_close:active .menu_contenu {
-    display: none;
+    /* menu burger */
+    .header_center .menu_burger {
+        display: none;
+    }
 }
