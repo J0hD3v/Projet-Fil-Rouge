@@ -184,6 +184,7 @@
 
     /* -------------------------------------------------- Boutons - Navbar */
 
+    /* Boutons navigation */
     .header_nav>a,
     .btn_nav>span {
         min-width: 8em;
